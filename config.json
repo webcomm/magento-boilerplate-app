@@ -1,0 +1,14 @@
+{
+  "production": false,
+  "sites": [
+    {
+      "package": "boilerplate",
+      "theme": "default",
+      "components": [],
+      "server": {
+        "proxy": "magentoboilerplate.dev",
+        "port": 3000
+      }
+    }
+  ]
+}

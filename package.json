@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "gulp": "^3.8.10",
+    "magento-boilerplate": "^3.0.0-alpha1"
+  }
+}
