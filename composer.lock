@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "00738c70e80015882d2be86aee4afd73",
+    "hash": "3fcf451180e54b0acf09ee4c4e42c2a2",
     "packages": [
         {
             "name": "eloquent/composer-config-reader",
@@ -323,16 +323,16 @@
         },
         {
             "name": "magento-hackathon/magento-composer-installer",
-            "version": "2.1.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/magento-hackathon/magento-composer-installer.git",
-                "reference": "e0c8e4afa4605fc3af21122e0e2663a7a995e22a"
+                "reference": "32a1048626880b181906fddb70f0bac1bab97a65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/magento-hackathon/magento-composer-installer/zipball/e0c8e4afa4605fc3af21122e0e2663a7a995e22a",
-                "reference": "e0c8e4afa4605fc3af21122e0e2663a7a995e22a",
+                "url": "https://api.github.com/repos/magento-hackathon/magento-composer-installer/zipball/32a1048626880b181906fddb70f0bac1bab97a65",
+                "reference": "32a1048626880b181906fddb70f0bac1bab97a65",
                 "shasum": ""
             },
             "archive": {
@@ -413,10 +413,10 @@
                 "magento"
             ],
             "support": {
-                "source": "https://github.com/magento-hackathon/magento-composer-installer/tree/2.1.0",
+                "source": "https://github.com/magento-hackathon/magento-composer-installer/tree/2.1.1",
                 "issues": "https://github.com/magento-hackathon/magento-composer-installer/issues"
             },
-            "time": "2014-11-14 22:48:23"
+            "time": "2014-12-11 23:43:53"
         },
         {
             "name": "webcomm/magento-boilerplate",
@@ -424,12 +424,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/webcomm/magento-boilerplate.git",
-                "reference": "f4e5690b0cbc9c2f8d3ef2734a37e075400c6738"
+                "reference": "656a3a09c80ae7520e0bc866a986d02dc6ba3c65"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webcomm/magento-boilerplate/zipball/f4e5690b0cbc9c2f8d3ef2734a37e075400c6738",
-                "reference": "f4e5690b0cbc9c2f8d3ef2734a37e075400c6738",
+                "url": "https://api.github.com/repos/webcomm/magento-boilerplate/zipball/656a3a09c80ae7520e0bc866a986d02dc6ba3c65",
+                "reference": "656a3a09c80ae7520e0bc866a986d02dc6ba3c65",
                 "shasum": ""
             },
             "type": "magento-module",
@@ -467,7 +467,7 @@
                 }
             ],
             "description": "A boilerplate project for creating beautiful sites using Magento, powered by Foundation 5.",
-            "time": "2014-12-08 05:22:45"
+            "time": "2015-03-12 03:39:51"
         }
     ],
     "packages-dev": [],
@@ -477,6 +477,7 @@
         "webcomm/magento-boilerplate": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
 }
