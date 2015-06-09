@@ -1,6 +1,6 @@
 {
   "dependencies": {
     "gulp": "^3.8.11",
-    "magento-boilerplate": "^3.0.9"
+    "magento-boilerplate": "^3.0"
   }
 }

@@ -1,4 +1,13 @@
 {
+  "name": "webcomm/magento-boilerplate-app",
+  "description": "A sample application that utilises the Magento Boilerplate project.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Webcomm",
+      "email": "hello@webcomm.io"
+    }
+  ],
   "repositories": [
     {
       "type": "composer",
@@ -6,8 +15,8 @@
     }
   ],
   "require": {
-    "magento-hackathon/magento-composer-installer": "*",
-    "webcomm/magento-boilerplate": "dev-develop"
+    "magento-hackathon/magento-composer-installer": "^3.0",
+    "webcomm/magento-boilerplate": "^3.0"
   },
   "extra": {
     "magento-root-dir": "./"

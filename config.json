@@ -1,5 +1,5 @@
 {
-  "production": false,
+  "production": true,
   "sites": [
     {
       "package": "boilerplate",
@@ -8,6 +8,18 @@
       "server": {
         "proxy": "magentoboilerplate.dev",
         "port": 3000
+      },
+      "compilation": {
+        "stylesheets": [],
+        "javascripts": [],
+        "images": [],
+        "includePaths": []
+      },
+      "watch": {
+        "stylesheets": [],
+        "javascripts": [],
+        "images": [],
+        "others": []
       }
     }
   ]
