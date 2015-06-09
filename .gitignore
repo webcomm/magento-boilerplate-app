@@ -162,7 +162,7 @@
 #          and not as ignore rule exclusions.          #
 # ==================================================== #
 
-# !/app/code/local/Foo/Bar
+# !/app/code/local/Foo/Bar/
 # !/app/design/frontend/base/default/layout/foo_bar.xml
 # !/app/design/frontend/base/default/template/foo_bar/
 # !/app/etc/modules/Foo_Bar.xml
