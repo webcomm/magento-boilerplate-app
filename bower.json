@@ -1,6 +1,6 @@
 {
   "name": "Magento Boilerplate App",
-  "devDependencies": {
+  "dependencies": {
     "magento-boilerplate": "develop"
   }
 }
