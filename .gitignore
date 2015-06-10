@@ -40,6 +40,10 @@
 /app/design/frontend/base/default/template/*
 /app/design/frontend/default/*
 
+# The Magento configuration file shouldn't be
+# included at all in version control, ever.
+/app/etc/local.xml
+
 # You must opt-in to module declaration files
 /app/etc/modules/*
 
