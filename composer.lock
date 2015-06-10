@@ -4,8 +4,60 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "836165dd64bb814384551d106397a16b",
+    "hash": "1f7f47df7076bbe63f657e9b309d18fc",
     "packages": [
+        {
+            "name": "aydin-hassan/magento-core-composer-installer",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bencorlett/magento-core-composer-installer.git",
+                "reference": "214266def3ce84fb3d73026e2f82e70f31912ad4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bencorlett/magento-core-composer-installer/zipball/214266def3ce84fb3d73026e2f82e70f31912ad4",
+                "reference": "214266def3ce84fb3d73026e2f82e70f31912ad4",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "~1.0"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0@dev",
+                "mikey179/vfsstream": "~1.4",
+                "phpunit/phpunit": "~4.3",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "\\AydinHassan\\MagentoCoreComposerInstaller\\CoreManager"
+            },
+            "autoload": {
+                "psr-4": {
+                    "AydinHassan\\MagentoCoreComposerInstaller\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "AydinHassan\\MagentoCoreComposerInstallerTest\\": "test/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aydin Hassan",
+                    "email": "aydin@hotmail.co.uk"
+                }
+            ],
+            "description": "A composer plugin for managing Magento Core",
+            "support": {
+                "source": "https://github.com/bencorlett/magento-core-composer-installer/tree/master"
+            },
+            "time": "2015-06-10 01:01:51"
+        },
         {
             "name": "eloquent/composer-config-reader",
             "version": "2.0.0",
@@ -419,6 +471,28 @@
             "time": "2015-06-02 18:51:41"
         },
         {
+            "name": "magento/magento",
+            "version": "1.9.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/AydinHassan/magento-community.git",
+                "reference": "f2c2c927f3490fd356e2ac377c678b3feadfd875"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/AydinHassan/magento-community/zipball/f2c2c927f3490fd356e2ac377c678b3feadfd875",
+                "reference": "f2c2c927f3490fd356e2ac377c678b3feadfd875",
+                "shasum": ""
+            },
+            "type": "magento-core",
+            "description": "Magento Community",
+            "support": {
+                "source": "https://github.com/AydinHassan/magento-community/tree/1.9.1.0",
+                "issues": "https://github.com/AydinHassan/magento-community/issues"
+            },
+            "time": "2014-12-08 22:49:07"
+        },
+        {
             "name": "symfony/console",
             "version": "v2.7.0",
             "source": {
@@ -527,7 +601,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "aydin-hassan/magento-core-composer-installer": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],

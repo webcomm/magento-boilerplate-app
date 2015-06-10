@@ -12,14 +12,30 @@
     {
       "type": "composer",
       "url": "http://packages.firegento.com"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/bencorlett/magento-core-composer-installer.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/AydinHassan/magento-community.git"
     }
   ],
   "require": {
+    "aydin-hassan/magento-core-composer-installer" : "dev-master",
     "magento-hackathon/magento-composer-installer": "^3.0",
+    "magento/magento" : "1.9.1.0",
     "webcomm/magento-boilerplate": "^3.0"
   },
   "extra": {
-    "magento-root-dir": "./"
+    "magento-root-dir": "./",
+    "magento-core-deploy": {
+      "excludes": [
+        ".htaccess",
+        "composer.json"
+      ]
+    }
   },
   "config": {
     "preferred-install": "dist"
