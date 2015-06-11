@@ -89,6 +89,11 @@
 /skin/frontend/base/default/js/*
 /skin/frontend/default/*
 
+# There's nothing that needs to be included
+# in the var folder. Think of it as a big
+# rubbish bin
+/var
+
 # ==================================================== #
 #    INCLUDE YOUR THEME DECLARATION AS A EXCLUSIONS    #
 #                          --                          #
