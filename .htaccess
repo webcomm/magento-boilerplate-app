@@ -209,6 +209,20 @@
     #FileETag none
 
 ###########################################
+## Prevent access to package control files, including:
+## 1. bower.json
+## 2. composer.json
+## 3. composer.lock
+## 4. config.json
+## 5. gulpfile.js
+## 6. package.json
+
+    <FilesMatch ^((bower|composer|config|package)\.json$|composer\.lock|gulpfile\.js)$>
+        order allow,deny
+        deny from all
+    </FilesMatch>
+
+###########################################
 ## Locally we enforce developer mode
 
     SetEnvIf Host .*\.dev MAGE_IS_DEVELOPER_MODE=1
