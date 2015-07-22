@@ -19,13 +19,13 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/AydinHassan/magento-community.git"
+      "url": "https://github.com/bencorlett/magento-community.git"
     }
   ],
   "require": {
     "aydin-hassan/magento-core-composer-installer" : "dev-master",
     "magento-hackathon/magento-composer-installer": "^3.0",
-    "magento/magento" : "1.9.1.0",
+    "magento/magento" : "^1.9",
     "webcomm/magento-boilerplate": "^3.0"
   },
   "extra": {

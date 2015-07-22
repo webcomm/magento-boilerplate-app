@@ -1,6 +1,6 @@
 {
   "name": "Magento Boilerplate App",
   "dependencies": {
-    "magento-boilerplate": "^3.0"
+    "magento-boilerplate": "^3.0.18"
   }
 }
