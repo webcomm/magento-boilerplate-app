@@ -39,6 +39,7 @@
 /app/design/frontend/base/default/layout/*
 /app/design/frontend/base/default/template/*
 /app/design/frontend/default/*
+/app/design/frontend/rwd/*
 
 # The Magento configuration file shouldn't be
 # included at all in version control, ever.
@@ -67,7 +68,7 @@
 # under the root "lib" directory. In particular,
 # many modules will override or add new form
 # element objects.
-/lib/Varien/Data/Form/Element/*
+/lib/*
 
 # Many people choose to opt-in their "wysiwyg"
 # directory into version control,
@@ -88,6 +89,7 @@
 !/skin/frontend/base/default/js/
 /skin/frontend/base/default/js/*
 /skin/frontend/default/*
+/skin/frontend/rwd/*
 
 # There's nothing that needs to be included
 # in the var folder. Think of it as a big
