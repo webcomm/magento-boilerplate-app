@@ -41,12 +41,9 @@
 /app/design/frontend/default/*
 /app/design/frontend/rwd/*
 
-# The Magento configuration file shouldn't be
+# Magento configuration files should not be
 # included at all in version control, ever.
-/app/etc/local.xml
-
-# You must opt-in to module declaration files
-/app/etc/modules/*
+/app/etc/*
 
 # In addition to allowing translation files, we
 # need to structure the ignore rules for easy
