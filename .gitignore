@@ -39,6 +39,7 @@
 /app/design/frontend/base/default/layout/*
 /app/design/frontend/base/default/template/*
 /app/design/frontend/default/*
+/app/design/frontend/enterprise/*
 /app/design/frontend/rwd/*
 
 # Magento configuration files should not be
@@ -86,6 +87,7 @@
 !/skin/frontend/base/default/js/
 /skin/frontend/base/default/js/*
 /skin/frontend/default/*
+/skin/frontend/enterprise/*
 /skin/frontend/rwd/*
 
 # There's nothing that needs to be included
