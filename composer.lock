@@ -4,7 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8c1f691f50fd44de3cfbd1414c329d3c",
+    "hash": "666e4ab10eca081a36e143a250a198bd",
+    "content-hash": "76702d069b3dc7836fe62fd744d36d2e",
     "packages": [
         {
             "name": "aydin-hassan/magento-core-composer-installer",
@@ -309,16 +310,16 @@
         },
         {
             "name": "justinrainbow/json-schema",
-            "version": "1.4.4",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/justinrainbow/json-schema.git",
-                "reference": "8dc9b9d85ab639ca60ab4608b34c1279d6ae7bce"
+                "reference": "a4bee9f4b344b66e0a0d96c7afae1e92edf385fe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/8dc9b9d85ab639ca60ab4608b34c1279d6ae7bce",
-                "reference": "8dc9b9d85ab639ca60ab4608b34c1279d6ae7bce",
+                "url": "https://api.github.com/repos/justinrainbow/json-schema/zipball/a4bee9f4b344b66e0a0d96c7afae1e92edf385fe",
+                "reference": "a4bee9f4b344b66e0a0d96c7afae1e92edf385fe",
                 "shasum": ""
             },
             "require": {
@@ -339,8 +340,8 @@
                 }
             },
             "autoload": {
-                "psr-0": {
-                    "JsonSchema": "src/"
+                "psr-4": {
+                    "JsonSchema\\": "src/JsonSchema/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -371,20 +372,20 @@
                 "json",
                 "schema"
             ],
-            "time": "2015-07-14 16:29:50"
+            "time": "2015-09-08 22:28:04"
         },
         {
             "name": "magento-hackathon/magento-composer-installer",
-            "version": "3.0.4",
+            "version": "3.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Cotya/magento-composer-installer.git",
-                "reference": "6aca169b43f6e68feee3dbf3b1f43c8799845104"
+                "reference": "4ef7466afaa0e1b91f52a3a246078cc5322f2279"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Cotya/magento-composer-installer/zipball/6aca169b43f6e68feee3dbf3b1f43c8799845104",
-                "reference": "6aca169b43f6e68feee3dbf3b1f43c8799845104",
+                "url": "https://api.github.com/repos/Cotya/magento-composer-installer/zipball/4ef7466afaa0e1b91f52a3a246078cc5322f2279",
+                "reference": "4ef7466afaa0e1b91f52a3a246078cc5322f2279",
                 "shasum": ""
             },
             "archive": {
@@ -396,7 +397,7 @@
             "require": {
                 "composer-plugin-api": "~1.0",
                 "eloquent/composer-config-reader": "2.*",
-                "php": ">=5.3.2",
+                "php": ">=5.4",
                 "symfony/console": "~2.5"
             },
             "require-dev": {
@@ -465,44 +466,68 @@
                 "magento"
             ],
             "support": {
-                "source": "https://github.com/Cotya/magento-composer-installer/tree/3.0",
+                "source": "https://github.com/Cotya/magento-composer-installer/tree/3.0.5",
                 "issues": "https://github.com/Cotya/magento-composer-installer/issues"
             },
-            "time": "2015-07-12 18:50:09"
+            "time": "2015-08-05 20:38:47"
         },
         {
             "name": "magento/magento",
-            "version": "1.9.2.0",
+            "version": "1.9.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bencorlett/magento-community.git",
-                "reference": "f40eec42f141eeb8cb8e30694ade9c8aa0bafee8"
+                "reference": "130b5fc9c2430fd251af464b3226114e264626c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bencorlett/magento-community/zipball/f40eec42f141eeb8cb8e30694ade9c8aa0bafee8",
-                "reference": "f40eec42f141eeb8cb8e30694ade9c8aa0bafee8",
+                "url": "https://api.github.com/repos/bencorlett/magento-community/zipball/130b5fc9c2430fd251af464b3226114e264626c2",
+                "reference": "130b5fc9c2430fd251af464b3226114e264626c2",
                 "shasum": ""
             },
             "type": "magento-core",
             "description": "Magento Community",
             "support": {
-                "source": "https://github.com/bencorlett/magento-community/tree/1.9.2.0"
+                "source": "https://github.com/bencorlett/magento-community/tree/1.9.2.1"
             },
-            "time": "2015-07-09 09:38:59"
+            "time": "2015-08-07 02:13:20"
         },
         {
-            "name": "symfony/console",
-            "version": "v2.7.2",
+            "name": "mediarox/pagespeed",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/symfony/Console.git",
-                "reference": "8cf484449130cabfd98dcb4694ca9945802a21ed"
+                "url": "https://github.com/mediarox/pagespeed.git",
+                "reference": "77fa14c8cfbd4e097a09f415253c28baf5e8c209"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/8cf484449130cabfd98dcb4694ca9945802a21ed",
-                "reference": "8cf484449130cabfd98dcb4694ca9945802a21ed",
+                "url": "https://api.github.com/repos/mediarox/pagespeed/zipball/77fa14c8cfbd4e097a09f415253c28baf5e8c209",
+                "reference": "77fa14c8cfbd4e097a09f415253c28baf5e8c209",
+                "shasum": ""
+            },
+            "require": {
+                "magento-hackathon/magento-composer-installer": "*"
+            },
+            "type": "magento-module",
+            "support": {
+                "source": "https://github.com/mediarox/pagespeed/tree/master",
+                "issues": "https://github.com/mediarox/pagespeed/issues"
+            },
+            "time": "2015-09-10 06:23:17"
+        },
+        {
+            "name": "symfony/console",
+            "version": "v2.7.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Console.git",
+                "reference": "9ff9032151186bd66ecee727d728f1319f52d1d8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/9ff9032151186bd66ecee727d728f1319f52d1d8",
+                "reference": "9ff9032151186bd66ecee727d728f1319f52d1d8",
                 "shasum": ""
             },
             "require": {
@@ -546,20 +571,20 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "https://symfony.com",
-            "time": "2015-07-09 16:07:40"
+            "time": "2015-09-03 11:40:38"
         },
         {
             "name": "webcomm/magento-boilerplate",
-            "version": "3.0.18",
+            "version": "3.0.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/webcomm/magento-boilerplate.git",
-                "reference": "d48948b9e4daf581156093c9babf6203dd075268"
+                "reference": "aa24a525f9c7f29e556edd9d702de89789328776"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/webcomm/magento-boilerplate/zipball/d48948b9e4daf581156093c9babf6203dd075268",
-                "reference": "d48948b9e4daf581156093c9babf6203dd075268",
+                "url": "https://api.github.com/repos/webcomm/magento-boilerplate/zipball/aa24a525f9c7f29e556edd9d702de89789328776",
+                "reference": "aa24a525f9c7f29e556edd9d702de89789328776",
                 "shasum": ""
             },
             "type": "magento-module",
@@ -594,14 +619,15 @@
                 }
             ],
             "description": "A boilerplate project for creating beautiful sites using Magento, powered by Foundation 5.",
-            "time": "2015-07-15 23:17:17"
+            "time": "2015-09-22 00:57:34"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "aydin-hassan/magento-core-composer-installer": 20
+        "aydin-hassan/magento-core-composer-installer": 20,
+        "mediarox/pagespeed": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

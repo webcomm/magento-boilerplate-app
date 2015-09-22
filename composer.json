@@ -20,12 +20,17 @@
     {
       "type": "vcs",
       "url": "https://github.com/bencorlett/magento-community.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/mediarox/pagespeed.git"
     }
   ],
   "require": {
     "aydin-hassan/magento-core-composer-installer" : "dev-master",
     "magento-hackathon/magento-composer-installer": "^3.0",
     "magento/magento" : "^1.9",
+    "mediarox/pagespeed": "dev-master",
     "webcomm/magento-boilerplate": "^3.0"
   },
   "extra": {
