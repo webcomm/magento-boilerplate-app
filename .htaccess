@@ -1,3 +1,27 @@
+# /**
+#  * The MIT License (MIT)
+#  *
+#  * Copyright (c) 2011-2014 Webcomm Pty Ltd
+#  *
+#  * Permission is hereby granted, free of charge, to any person obtaining a copy
+#  * of this software and associated documentation files (the "Software"), to deal
+#  * in the Software without restriction, including without limitation the rights
+#  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+#  * copies of the Software, and to permit persons to whom the Software is
+#  * furnished to do so, subject to the following conditions:
+#  *
+#  * The above copyright notice and this permission notice shall be included in
+#  * all copies or substantial portions of the Software.
+#  *
+#  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+#  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+#  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+#  * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+#  * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+#  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+#  * THE SOFTWARE.
+#  */
+
 ############################################
 ## uncomment these lines for CGI mode
 ## make sure to specify the correct cgi php binary file name
@@ -207,6 +231,129 @@
 ## http://developer.yahoo.com/performance/rules.html#etags
 
     #FileETag none
+
+
+###########################################
+## Rules taken from HTML5 Boilerplate 5.2
+
+    # ----------------------------------------------------------------------
+    # | ETags                                                              |
+    # ----------------------------------------------------------------------
+
+    # Remove `ETags` as resources are sent with far-future expires headers.
+    #
+    # https://developer.yahoo.com/performance/rules.html#etags
+    # https://tools.ietf.org/html/rfc7232#section-2.3
+
+    # `FileETag None` doesn't work in all cases.
+    <IfModule mod_headers.c>
+        Header unset ETag
+    </IfModule>
+
+    FileETag None
+
+    # ----------------------------------------------------------------------
+    # | Expires headers                                                    |
+    # ----------------------------------------------------------------------
+
+    # Serve resources with far-future expires headers.
+    #
+    # (!) If you don't control versioning with filename-based
+    # cache busting, you should consider lowering the cache times
+    # to something like one week.
+    #
+    # https://httpd.apache.org/docs/current/mod/mod_expires.html
+
+    <IfModule mod_expires.c>
+
+        ExpiresActive on
+        ExpiresDefault                                      "access plus 1 month"
+
+      # CSS
+
+        ExpiresByType text/css                              "access plus 1 year"
+
+
+      # Data interchange
+
+        ExpiresByType application/atom+xml                  "access plus 1 hour"
+        ExpiresByType application/rdf+xml                   "access plus 1 hour"
+        ExpiresByType application/rss+xml                   "access plus 1 hour"
+
+        ExpiresByType application/json                      "access plus 0 seconds"
+        ExpiresByType application/ld+json                   "access plus 0 seconds"
+        ExpiresByType application/schema+json               "access plus 0 seconds"
+        ExpiresByType application/vnd.geo+json              "access plus 0 seconds"
+        ExpiresByType application/xml                       "access plus 0 seconds"
+        ExpiresByType text/xml                              "access plus 0 seconds"
+
+
+      # Favicon (cannot be renamed!) and cursor images
+
+        ExpiresByType image/vnd.microsoft.icon              "access plus 1 week"
+        ExpiresByType image/x-icon                          "access plus 1 week"
+
+      # HTML
+
+        ExpiresByType text/html                             "access plus 0 seconds"
+
+
+      # JavaScript
+
+        ExpiresByType application/javascript                "access plus 1 year"
+        ExpiresByType application/x-javascript              "access plus 1 year"
+        ExpiresByType text/javascript                       "access plus 1 year"
+
+
+      # Manifest files
+
+        ExpiresByType application/manifest+json             "access plus 1 week"
+        ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+        ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+
+
+      # Media files
+
+        ExpiresByType audio/ogg                             "access plus 1 month"
+        ExpiresByType image/bmp                             "access plus 1 month"
+        ExpiresByType image/gif                             "access plus 1 month"
+        ExpiresByType image/jpeg                            "access plus 1 month"
+        ExpiresByType image/png                             "access plus 1 month"
+        ExpiresByType image/svg+xml                         "access plus 1 month"
+        ExpiresByType image/webp                            "access plus 1 month"
+        ExpiresByType video/mp4                             "access plus 1 month"
+        ExpiresByType video/ogg                             "access plus 1 month"
+        ExpiresByType video/webm                            "access plus 1 month"
+
+
+      # Web fonts
+
+        # Embedded OpenType (EOT)
+        ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+        ExpiresByType font/eot                              "access plus 1 month"
+
+        # OpenType
+        ExpiresByType font/opentype                         "access plus 1 month"
+
+        # TrueType
+        ExpiresByType application/x-font-ttf                "access plus 1 month"
+
+        # Web Open Font Format (WOFF) 1.0
+        ExpiresByType application/font-woff                 "access plus 1 month"
+        ExpiresByType application/x-font-woff               "access plus 1 month"
+        ExpiresByType font/woff                             "access plus 1 month"
+
+        # Web Open Font Format (WOFF) 2.0
+        ExpiresByType application/font-woff2                "access plus 1 month"
+
+
+      # Other
+
+        ExpiresByType text/x-cross-domain-policy            "access plus 1 week"
+
+    </IfModule>
+
+###########################################
 
 ###########################################
 ## Prevent access to package control files, including:
