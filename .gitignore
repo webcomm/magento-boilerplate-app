@@ -45,6 +45,8 @@
 # Magento configuration files should not be
 # included at all in version control, ever.
 /app/etc/*
+!/app/etc/modules/
+/app/etc/modules/*
 
 # In addition to allowing translation files, we
 # need to structure the ignore rules for easy
