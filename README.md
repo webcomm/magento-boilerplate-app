@@ -20,8 +20,7 @@ So, what's improved in this version? A lot, it turns out:
 4. A small module was written to **remove redundant Magento JavaScript and stylesheets**, as well as injecting a **single, custom JavaScript file** (at the end of the `body` tag) and a **single, custom stylesheet file** in the `head` tag. No more stylesheet-overload and performance hit.
 5. **No more hideous copying of files** to preserve inheritence and compatibility with new versions. We use the following dependency management tools to pull in Magento Boilerplate:
    1. **[Composer](http://getcomposer.org)** is used to install custom modules and patch Magento's files to integrate with future Composer packages.
-   2. **[Bower](http://bower.io)** is used to install Magento Boilerplate's assets.
-   3. **[Gulp](http://gulpjs.com)** is used as a taskrunner to compile Magnto Boilerplate's assets in conjunction with custom assets and manage live reloading during development.
+   2. **[Gulp](http://gulpjs.com)** is used as a taskrunner to install and compile Magnto Boilerplate's assets in conjunction with custom assets and manage live reloading during development.
 
 ## Upgrading from `version 2.0`
 
@@ -45,7 +44,6 @@ Navigate to the root folder of your Magento Boilerplate App installation and run
 
 1. `composer install`
 2. `npm install`
-3. `bower install`
 
 You'll now have your dependencies installed!
 
